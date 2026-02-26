@@ -6,10 +6,10 @@ export default function Home() {
     <div className="relative min-h-screen w-screen bg-white flex flex-col">
       <main className="flex-1 flex flex-col items-center justify-center px-6">
         <div className="text-center">
-          <h1 className="font-logo text-6xl sm:text-8xl md:text-9xl tracking-tight text-black">
+          <h1 className="text-load-in font-logo text-6xl sm:text-8xl md:text-9xl tracking-tight text-black">
             VROOM
           </h1>
-          <p className="blurb-fast-fade-in mt-8 max-w-3xl mx-auto text-lg md:text-2xl text-gray-600 leading-relaxed">
+          <p className="text-load-in mt-8 max-w-3xl mx-auto text-lg md:text-2xl text-gray-600 leading-relaxed">
             VROOM is an event planning agency that leverages automation tools to
             take care of event planning busywork. By solving the
             back-and-forth between vendors, venue sourcing, and event logistics,

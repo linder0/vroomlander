@@ -46,7 +46,7 @@ body {
   overscroll-behavior: none;
 }
 
-@keyframes blurb-fast-fade-in {
+@keyframes text-load-in {
   from {
     opacity: 0;
     transform: translateX(-24px);
@@ -57,6 +57,7 @@ body {
   }
 }
 
-.blurb-fast-fade-in {
-  animation: blurb-fast-fade-in 1s ease-out forwards;
+.text-load-in {
+  opacity: 0;
+  animation: text-load-in 1s ease-out forwards;
 }
