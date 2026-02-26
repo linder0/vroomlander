@@ -11,9 +11,10 @@ export default function Home() {
           </h1>
           <p className="blurb-fast-fade-in mt-8 max-w-3xl mx-auto text-lg md:text-2xl text-gray-600 leading-relaxed">
             VROOM is an event planning agency that leverages automation tools to
-            organize high quality events. We take care of the back-and-forth
-            between vendors, venue sourcing, and event logistics at a fraction
-            of the cost of an event planner.
+            take care of event planning busywork. By solving the
+            back-and-forth between vendors, venue sourcing, and event logistics,
+            allowing hosts to focus on the guest experience and the creative
+            vision.
           </p>
         </div>
 
