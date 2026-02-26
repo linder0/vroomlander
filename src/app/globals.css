@@ -45,3 +45,18 @@ html::-webkit-scrollbar {
 body {
   overscroll-behavior: none;
 }
+
+@keyframes blurb-fast-fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.blurb-fast-fade-in {
+  animation: blurb-fast-fade-in 1s ease-out forwards;
+}

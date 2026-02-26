@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Button from "@/components/ui/Button";
-import { ROUTES, ANIMATION } from "@/constants";
+import { ANIMATION } from "@/constants";
 
 // =============================================================================
 // Hero Component - Main landing section with scroll fade effect
@@ -24,15 +24,21 @@ export default function Hero() {
         </h1>
 
         {/* Blurb */}
-        <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-          Vroom is the full-stack event planning platform that finds curated
-          venues and vendors. We coordinate all manual operations so you can put
-          your focus on making your event special.
-        </p>
+        <motion.p
+          className="text-2xl md:text-3xl text-gray-600 max-w-4xl mx-auto mb-8 leading-relaxed"
+          initial={{ opacity: 0, x: -32 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+        >
+          VROOM is an event planning agency that leverages automation tools to
+          organize high quality events. We take care of the back-and-forth
+          between vendors, venue sourcing, and event logistics at a fraction of
+          the cost of an event planner.
+        </motion.p>
 
         {/* CTA Button */}
-        <Button href={ROUTES.BOOK} variant="primary" size="lg">
-          Book a Call
+        <Button href="mailto:hello@usevroom.com" variant="primary" size="lg">
+          Learn More
         </Button>
       </motion.div>
     </section>
